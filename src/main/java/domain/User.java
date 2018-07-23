@@ -27,7 +27,7 @@ public class User extends BaseDomain{
     private String userName;
 
     @Column(name = "user_type")
-    private String userType;
+    private int userType = NORMAL_USER;
 
     @Column(name = "last_ip")
     private String lastIp;
@@ -59,11 +59,11 @@ public class User extends BaseDomain{
         this.userName = userName;
     }
 
-    public String getUserType() {
+    public int getUserType() {
         return userType;
     }
 
-    public void setUserType(String userType) {
+    public void setUserType(int userType) {
         this.userType = userType;
     }
 
