@@ -62,7 +62,7 @@
 		</tx:attributes>
 	</tx:advice>
 	<aop:config>
-		<aop:advisor id="managerDaoTx" advice-ref="txAdvice" pointcut="execution(* *..*.*(..))" order="1"/>
+		<aop:advisor id="managerDaoTx" advice-ref="txAdvice" pointcut="execution(* dao.*.*(..))" order="1"/>
 	</aop:config>
 
 </beans>
